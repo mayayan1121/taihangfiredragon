@@ -1,0 +1,87 @@
+/* components */
+@import "navbar.css";
+@import "footer.css";
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap');
+
+body{
+    background-color: #EEE2DE !important;
+    width: 100%;
+
+
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.chinese_word{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
+}
+
+.chinese_word_head{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
+}
+
+div, div>p, div>h4{
+    font-family: 'Noto Serif TC', serif;
+    padding: 8px;
+    margin: 15px;
+    text-align: justify;
+}
+
+.heading{
+    font-weight: 700;
+}
+
+.parent_block{
+    display: flex;
+    width: 99%;
+}
+
+.block{
+    width: 48%;
+    height: auto;
+    padding:20px;
+    margin: auto;
+    float: left;
+    overflow: hidden;
+}
+
+body::backdrop{
+    opacity: 0.5;
+}
+
+.block>img{
+    width:100%;
+}
+
+@media screen and (max-width: 768px){
+    .block{
+       width: 90%;
+       padding:2px;
+       margin: 2px;
+   
+    }
+   
+   .parent_block{
+       display: block;
+       overflow:hidden;
+       width:100%;
+       
+   } 
+
+   *{
+    text-align: left;
+   }
+
+   iframe{
+    width: 100%;
+    height:auto;
+   }
+   }
